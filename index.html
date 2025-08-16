@@ -6,12 +6,16 @@
     <title>Startup Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap" rel="stylesheet">
     <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap"
     rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap" rel="stylesheet">
+   
     <style type="text/tailwindcss">
         @theme {
               --color-clifford: #da373d;
@@ -20,7 +24,10 @@
 
 </head>
 <body class="border-gray-200 bg-slate-900 px-6">
-    <header>
+    <header class="relative">
+      <div class="illustrator">
+        <img src="images/hero-illustration.svg" class="absolute hidden md:block">
+      </div>
         <nav class="px-4 lg:px-40 flex justify-between items-center py-10 text-slate-700">
             <div class="flex items-center gap-4 lg:gap-10">
               <div>
@@ -209,7 +216,7 @@
                     
                   </div>
                   </p>
-                  <div class="flex justify-end w-full px-8 pb-4">Learn more</div>
+                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
                 </div>
 
                  <!--1-->
@@ -221,7 +228,7 @@
                     <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     
                   </div>
-                  <div class="flex justify-end w-full px-8 pb-4">Learn more</div>
+                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
                  </div>
                   <!--1-->
 
@@ -233,7 +240,7 @@
                     <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 
                   </div>
-                  <div class="flex justify-end w-full px-8 pb-4">Learn more</div>
+                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
                   </div>
                    <!--1-->
                  <div class="flex inline-flex flex-col items-start  bg-slate-800 rounded-lg">
@@ -243,7 +250,7 @@
                     <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 
                   </div>
-                  <div class="flex justify-end w-full px-8 pb-4">Learn more</div>
+                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
                 </div>
               </div>
             </section>
@@ -254,18 +261,18 @@
               <div class="c1wya cjftm cta51 c39rz cxdjo ck8c1 cpjqk cj3ve c7c5q" aria-hidden="true">
                 <img src="./images/features-illustration-02.svg" class="absolute top-0 left-0 w-full h-full object-cover opacity-35" width="1440" height="453" alt="Features 02 Illustration">
             </div>
-              <h2 class="flex flex-col justify-center font-semibold text-5xl lg:text-6xl text-white text-center py-12">Features to help you create<br/>your best designs</h2>
-              <div class="flex flex-col  justify-center  mx-auto max-w-6xl">
+              <h2 class="flex flex-col justify-center font-[HK_Grotesk] font-semibold text-5xl lg:text-6xl text-white text-center py-12">Features to help you create<br/>your best designs</h2>
+              <div class="flex flex-col  justify-center  mx-auto max-w-6xl ">
                   <div class="flex flex-col lg:flex-row items-start gap-8 shadow-2xl">
                     <div class="flex-1 p-4">
                       <div class="flex justify-start gap-4 p-4">
-                        <button class="text-white text-md bg-indigo-500 rounded-full px-4">Everyone</button>
-                        <button class="text-white text-md bg-indigo-500 rounded-full p-2">Freelancer</button>
-                        <button class="text-white text-md bg-indigo-500 rounded-full p-2">Organizations</button>
+                        <button class="btn-everyone cursor-pointer text-white text-md bg-indigo-500 rounded-full px-4 ">Everyone</button>
+                        <button class="btn-freelance cursor-pointer text-white  text-md bg-slate-600 rounded-full p-2 ">Freelancer</button>
+                        <button class="btn-org cursor-pointer text-white text-md  bg-slate-600  rounded-full p-2 ">Organizations</button>
                        </div>
                       
                         <div>
-                          <h3 class="text-4xl text-white">Kickstart with your project with those goals</h3>
+                          <h3 class="sent text-4xl text-white">Kickstart with your project with those goals</h3>
                           <p class="text-m text-slate-500 py-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt laborum.
                           </p>
                          </div>
@@ -289,42 +296,87 @@
               <div>
                 <h2 class="text-5xl text-white text-center py-8">An ecosystem of integration</h2>
               </div>
-              
-                <div class="relative flex items-center justify-center m-48">
-  
-                  <!-- Blurred dots -->
-                  <svg class="absolute top-0 w-[557px] h-[93px]" xmlns="http://www.w3.org/2000/svg">
-                    <!-- your circles and filters here -->
-                  </svg>
-                
-                  <!-- Halo effect -->
-                  <svg class="absolute w-[800px] h-[800px] py-32" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="lg-1">
-                        <stop stop-color="#0F172A" stop-opacity="0%" offset="0%"/>
-                        <stop stop-color="#0F172A" offset="100%"/>
-                      </linearGradient>
-                    </defs>
-                    <circle cx="400" cy="400" r="200" fill="#4F46E5" opacity="0.2"/>
-                    <rect fill="url(#lg-1)" width="800" height="800"/>
-                  </svg>
-                
-                  <!-- Logo -->
-                  <svg class="relative w-16 h-16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient x1="18.591%" y1="0%" x2="100%" y2="100%" id="b">
-                        <stop stop-color="#818CF8" offset="0%"/>
-                        <stop stop-color="#C7D2FE" offset="100%"/>
-                      </linearGradient>
-                    </defs>
-                    <path fill="#3730A3" d="M16 18.5V32l15.999-9.25V9.25z"/>
-                    <path fill="#4F46E5" d="m0 23 16 9V18.501L0 9.251z"/>
-                    <path fill="url(#b)" d="M16 0 0 9.25l16 9.25 15.999-9.25z"/>
-                  </svg>
-                
-                </div>
+              <div class="relative flex items-center justify-center m-48">
 
+                <!-- Blurred static dots -->
+                <svg class="absolute w-[1400px] h-[100px]" xmlns="http://www.w3.org/2000/svg">
+
+                  <g class=" " fill="#6366F1" transform="translate(437 8)">
+                    <circle fill-opacity=".64" filter="url(#blurreddots-a)" cx="6" cy="66" r="6"></circle>
+                    <circle fill-opacity=".32" filter="url(#blurreddots-b)" cx="90" cy="6" r="6"></circle>
+                    <circle fill-opacity=".64" filter="url(#blurreddots-c)" cx="90" cy="66" r="6"></circle>
+                    <circle fill-opacity=".32" filter="url(#blurreddots-d)" cx="6" cy="36" r="4"></circle>
+                    <circle fill-opacity=".32" filter="url(#blurreddots-e)" cx="60" cy="36" r="4"></circle>
+                    <circle fill-opacity=".64" cx="34" cy="22" r="2"></circle>
+                    <circle fill-opacity=".32" cx="34" cy="50" r="2"></circle>
+                    <circle fill-opacity=".64" cx="118" cy="22" r="2"></circle>
+                    <circle fill-opacity=".32" cx="118" cy="50" r="2"></circle>
+                </g>
+
+              
+                </svg>
+                <svg class="absolute w-[600px] h-[100px]" xmlns="http://www.w3.org/2000/svg">
+
+                  <g class="" fill="#6366F1" transform="translate(437 8)">
+                    <circle fill-opacity=".64" filter="url(#blurreddots-a)" cx="6" cy="66" r="6"></circle>
+                    <circle fill-opacity=".32" filter="url(#blurreddots-b)" cx="90" cy="6" r="6"></circle>
+                    <circle fill-opacity=".64" filter="url(#blurreddots-c)" cx="90" cy="66" r="6"></circle>
+                    <circle fill-opacity=".32" filter="url(#blurreddots-d)" cx="6" cy="36" r="4"></circle>
+                    <circle fill-opacity=".32" filter="url(#blurreddots-e)" cx="60" cy="36" r="4"></circle>
+                    <circle fill-opacity=".64" cx="34" cy="22" r="2"></circle>
+                    <circle fill-opacity=".32" cx="34" cy="50" r="2"></circle>
+                    <circle fill-opacity=".64" cx="118" cy="22" r="2"></circle>
+                    <circle fill-opacity=".32" cx="118" cy="50" r="2"></circle>
+                </g>
+
+              
+                </svg>
+              
+                <!-- Lighter halo ripple effect -->
+                <svg class="absolute w-[800px] h-[800px]" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.9"/>
+                      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.5"/>
+                    </radialGradient>
+                  </defs>
+                
+                  <!-- Main ripple (one-way) -->
+                  <circle cx="400" cy="400" r="80" fill="url(#glow)">
+                    <animate attributeName="r" values="80;130" dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.4;0" dur="2s" repeatCount="indefinite"/>
+                  </circle>
+                
+                  <!-- Secondary ripple (one-way) -->
+                  <circle cx="400" cy="400" r="60" fill="url(#glow)">
+                    <animate attributeName="r" values="60;110" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.4;0" dur="3s" repeatCount="indefinite"/>
+                  </circle>
+                </svg>
+               
+                
+              
+                <!-- Logo -->
+                <svg class="relative w-16 h-16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient x1="18.591%" y1="0%" x2="100%" y2="100%" id="b">
+                      <stop stop-color="#818CF8" offset="0%"/>
+                      <stop stop-color="#C7D2FE" offset="100%"/>
+                    </linearGradient>
+                  </defs>
+                  <path fill="#3730A3" d="M16 18.5V32l15.999-9.25V9.25z"/>
+                  <path fill="#4F46E5" d="m0 23 16 9V18.501L0 9.251z"/>
+                  <path fill="url(#b)" d="M16 0 0 9.25l16 9.25 15.999-9.25z"/>
+                </svg>
+              
+              </div>
+              
+
+               
+                
+             
                 <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 sm:grid-cols-3 mt-32 m-4 p-32">
+                  <div class="hidden lg:block absolute top-full left-1/2 w-[2px] h-12 bg-gray-300"></div>
                   <div class="flex justify-center items-center bg-slate-800 p-8 ">
                     <div class="rounded-full p-4 bg-slate-900">
                       <img src="/images/integration-icon-01.svg">
@@ -366,89 +418,239 @@
 
             </section>
 
-            <section>
-               <div>
-                <h2 class="text-white text-5xl text-center mt-96 py-4 ">Let's find the right plan for you business</h2>
-                <p class="text-slate-700 text-center text-xl">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
-               </div>
+          
+              
+              <section>
+                <div>
+                  <h2 class="text-white text-5xl text-center mt-96 py-4">
+                    Let's find the right plan for your business
+                  </h2>
+                  <p class="text-slate-400 text-center text-xl">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
+                  </p>
+                </div>
 
-               <div class="bg-slate-900 text-white py-12">
-                <div class="max-w-6xl mx-auto px-4">
-                  <!-- Header -->
-                  <div class="text-center mb-8">
-                    <p class="text-slate-300">Monthly <span class="ml-2 text-indigo-400">Yearly (-20%)</span></p>
-                  </div>
-              
-                  <!-- Pricing Table -->
-                  <div class="grid grid-cols-4 gap-px bg-slate-700 rounded-lg overflow-hidden">
+                <div class="bg-slate-900 text-white py-12">
+                  <div class="max-w-6xl mx-auto px-4">
+                    <!-- Toggle -->
                     
-                    <!-- Header Row -->
-                    <div class="bg-slate-800 p-4"></div>
-                    <div class="bg-slate-800 p-4 text-center">
-                      <h3 class="text-lg font-bold">Starter</h3>
-                      <p class="text-2xl font-extrabold">$29<span class="text-sm">/mo</span></p>
-                    </div>
-                    <div class="bg-slate-800 p-4 text-center">
-                      <h3 class="text-lg font-bold">Agency</h3>
-                      <p class="text-2xl font-extrabold">$49<span class="text-sm">/mo</span></p>
-                    </div>
-                    <div class="bg-slate-800 p-4 text-center">
-                      <h3 class="text-lg font-bold">Team</h3>
-                      <p class="text-2xl font-extrabold">$79<span class="text-sm">/mo</span></p>
+                    <!-- Desktop Table -->
+                    <div class="hidden md:block overflow-x-auto">
+                      <table class="w-full ">
+                        <thead>
+                          <tr class=" bg-slate-800">
+                            <th class=" p-4 text-left text-slate-500 border-r border-slate-700 text-sm">Monthly Yearly
+
+                              <label class="toggle relative inline-flex items-center cursor-pointer ">
+                                <input type="checkbox" class="sr-only peer">
+                                <div class="w-10 h-3 bg-gray-300 rounded-full
+                                            transition-colors duration-300 text-slate-900"></div>
+                                <div class="absolute left-1 w-6 h-6 bg-white rounded-full 
+                                            transition-transform duration-300 peer-checked:translate-x-5 peer peer-checked:bg-indigo-600"></div>
+                                
+                              </label>
+                              
+                              <span class="text-green-500 text-sm">(-20%)</span> </th>
+
+
+                            <th class="starter p-4 text-center border-r border-slate-700 text-indigo-600">Starter<br><span class="price text-lg font-bold text-white">$29 </span> <span class="text-slate-500">/mo</span></th>
+                            <th class="agency p-4 text-center border-r border-slate-700 text-indigo-600 ">Agency<br><span class="price text-lg font-bold text-white">$55 </span> <span class="text-slate-500">/mo</span></th>
+                            <th class="team p-4 text-center text-indigo-600 ">Team<br><span class="price text-lg font-bold text-white">$85 </span> <span class="text-slate-500">/mo</span></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="p-4  text-slate-500 border-r border-slate-700 bg-slate-900">Usage</td>
+                            <td class="p-4 text-center border-r border-slate-700"></td>
+                            <td class="p-4 text-center border-r border-slate-700"></td>
+                            <td class="p-4 text-center "></td>
+                          </tr>
+                          <tr class="bg-slate-800">
+                            <td class="p-4 border-r border-slate-700 ">Admins &amp; Members</td>
+                            <td class="p-4 text-center border-r border-slate-700">4</td>
+                            <td class="p-4 text-center border-r border-slate-700">12</td>
+                            <td class="p-4 text-center ">Unlimited</td>
+                          </tr>
+                          <tr>
+                            <td class="p-4 border-r border-slate-700">File Storage</td>
+                            <td class="p-4 text-center border-r border-slate-700">10GB</td>
+                            <td class="p-4 text-center border-r border-slate-700">50GB</td>
+                            <td class="p-4 text-center ">Unlimited</td>
+                          </tr>
+                          <tr class="bg-slate-800">
+                            <td class="p-4 border-r border-slate-700">Active Users</td>
+                            <td class="p-4 text-center border-r border-slate-700">500</td>
+                            <td class="p-4 text-center border-r border-slate-700">1500</td>
+                            <td class="p-4 text-center ">Unlimited</td>
+                          </tr>
+                          <tr>
+                            <td class="p-4 border-r border-slate-700 text-slate-500">Features</td>
+                            <td class="p-4 text-center border-r border-slate-700"></td>
+                            <td class="p-4 text-center border-r border-slate-700"></td>
+                            <td class="p-4 text-center "></td>
+                          </tr>
+                          <tr class="bg-slate-800">
+                            <td class="p-4 border-r border-slate-700">Unlimited Activities</td>
+                            <td class="p-4 text-center border-r border-slate-700">✔</td>
+                            <td class="p-4 text-center border-r border-slate-700">✔</td>
+                            <td class="p-4 text-center ">✔</td>
+                          </tr>
+
+                          <tr>
+                            <td class="p-4 border-r border-slate-700">Data Export</td>
+                            <td class="p-4 text-center border-r border-slate-700">—</td>
+                            <td class="p-4 text-center border-r border-slate-700">✔</td>
+                            <td class="p-4 text-center ">✔</td>
+                          </tr>
+                          <tr class="bg-slate-800">
+                            <td class="p-4 border-r border-slate-700">Adjust Group Sizes</td>
+                            <td class="p-4 text-center border-r border-slate-700">—</td>
+                            <td class="p-4 text-center border-r border-slate-700">—</td>
+                            <td class="p-4 text-center ">✔</td>
+                          </tr>
+                          <tr>
+                            <td class="p-4 border-r border-slate-700"></td>
+                            <td class="p-4 text-center border-r border-slate-700">
+                              <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                            </td>
+                            <td class="p-4 text-center border-r border-slate-700">
+                              <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                            </td>
+                            <td class="p-4 text-center ">
+                              <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
               
-                    <!-- Feature Rows -->
-                    <div class="bg-slate-800 p-4 font-semibold">Admins & Members</div>
-                    <div class="bg-slate-900 p-4 text-center">4</div>
-                    <div class="bg-slate-900 p-4 text-center">12</div>
-                    <div class="bg-slate-900 p-4 text-center">Unlimited</div>
-              
-                    <div class="bg-slate-800 p-4 font-semibold">File Storage</div>
-                    <div class="bg-slate-900 p-4 text-center">10GB</div>
-                    <div class="bg-slate-900 p-4 text-center">50GB</div>
-                    <div class="bg-slate-900 p-4 text-center">Unlimited</div>
-              
-                    <div class="bg-slate-800 p-4 font-semibold">Active Users</div>
-                    <div class="bg-slate-900 p-4 text-center">500</div>
-                    <div class="bg-slate-900 p-4 text-center">1500</div>
-                    <div class="bg-slate-900 p-4 text-center">Unlimited</div>
-              
-                    <div class="bg-slate-800 p-4 font-semibold">Unlimited Activities</div>
-                    <div class="bg-slate-900 p-4 text-center">✔</div>
-                    <div class="bg-slate-900 p-4 text-center">✔</div>
-                    <div class="bg-slate-900 p-4 text-center">✔</div>
-              
-                    <!-- Buttons -->
-                    <div class="bg-slate-800 p-4"></div>
-                    <div class="bg-slate-900 p-4 text-center">
-                      <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                 
+                    <div class="grid gap-8 md:hidden">
+
+                      <div class="text-center mb-8 bg-slate-800 p-6">
+                        <div class="flex items-center justify-center space-x-3">
+                          <!-- Monthly Text -->
+                          <span class="text-slate-300">Monthly</span>
+                      
+                          <!-- Toggle Switch -->
+                          <label class="toggle1 relative cursor-pointer">
+                            <input type="checkbox" class="sr-only peer">
+                            
+                            <!-- Track -->
+                            <div class="w-10 h-3 bg-gray-300 rounded-full transition-colors duration-300 "></div>
+                            
+                            <!-- Thumb -->
+                            <div class="absolute left-0 top-[-0.30rem] w-6 h-6 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-5 peer-checked:bg-indigo-600"></div>
+                          </label>
+                      
+                          <!-- Yearly Text -->
+                          <span class="ml-2 text-slate-500">
+                            Yearly <span class="text-green-500">(-20%)</span>
+                          </span>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="bg-slate-800  overflow-hidden shadow-lg">
+                        <div class="flex flex-col items-start p-6 text-center">
+                          <h3 class="text-lg font-bold text-indigo-600">Starter</h3>
+                          <p class="starter1 text-3xl font-extrabold mt-2"><span class="price1 text-3xl font-bold text-white">$29</span><span class="text-sm text-slate-500">/mo</span></p>
+                        </div>
+                        <div class="border-t border-slate-700">
+                          <ul>
+                            <li class="flex justify-between p-4 bg-gray-900 text-slate-500 text-sm "><span>USAGE</span></li>
+                            <li class="flex justify-between p-4 "><span>Admins &amp; Members</span><span>4</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 "><span>File Storage</span><span>10GB</span></li>
+                            <li class="flex justify-between p-4 "><span>Active Users</span><span>500</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 text-slate-500 text-sm "><span>FEATURES</span></li>
+                            <li class="flex justify-between p-4 "><span>Unlimited Activities</span><span>✔</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 "><span>Data Export</span><span>—</span></li>
+                            <li class="flex justify-between p-4"><span>Adjust Group Sizes</span><span>—</span></li>
+                          </ul>
+                        </div>
+                        <div class="p-6 text-center bg-gray-900">
+                          <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                        </div>
+                      </div>
+
+                      <div class="bg-slate-800  overflow-hidden shadow-lg">
+                        <div class="flex flex-col items-start p-6 text-center">
+                          <h3 class="text-lg font-bold text-indigo-600">Agency</h3>
+                          <p class="text-3xl font-extrabold mt-2"><span class="price2 text-3xl font-bold text-white">$55</span><span class="text-sm text-slate-500">/mo</span></p>
+                        </div>
+                        <div class="border-t border-slate-700">
+                          <ul>
+                            <li class="flex justify-between p-4 bg-gray-900 text-slate-500 text-sm "><span>USAGE</span></li>
+                            <li class="flex justify-between p-4 "><span>Admins &amp; Members</span><span>4</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 "><span>File Storage</span><span>10GB</span></li>
+                            <li class="flex justify-between p-4 "><span>Active Users</span><span>500</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 text-slate-500 text-sm "><span>FEATURES</span></li>
+                            <li class="flex justify-between p-4 "><span>Unlimited Activities</span><span>✔</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 "><span>Data Export</span><span>—</span></li>
+                            <li class="flex justify-between p-4"><span>Adjust Group Sizes</span><span>—</span></li>
+                          </ul>
+                        </div>
+                        <div class="p-6 text-center bg-gray-900">
+                          <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                        </div>
+                      </div>
+
+
+                      <div class="bg-slate-800  overflow-hidden shadow-lg">
+                        <div class="flex flex-col items-start p-6 text-center">
+                          <h3 class="text-lg font-bold text-indigo-600">Team</h3>
+                          <p class="text-3xl font-extrabold mt-2"><span class="price3 text-3xl font-bold text-white">$85</span><span class="text-sm text-slate-500">/mo</span></p>
+                        </div>
+                        <div class="border-t border-slate-700">
+                          <ul>
+                            <li class="flex justify-between p-4 bg-gray-900 text-slate-500 text-sm "><span>USAGE</span></li>
+                            <li class="flex justify-between p-4 "><span>Admins &amp; Members</span><span>4</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 "><span>File Storage</span><span>10GB</span></li>
+                            <li class="flex justify-between p-4 "><span>Active Users</span><span>500</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 text-slate-500 text-sm "><span>FEATURES</span></li>
+                            <li class="flex justify-between p-4 "><span>Unlimited Activities</span><span class="text-green-500">✔</span></li>
+                            <li class="flex justify-between p-4 bg-gray-900 "><span>Data Export</span><span>—</span></li>
+                            <li class="flex justify-between p-4"><span>Adjust Group Sizes</span><span>—</span></li>
+                          </ul>
+                        </div>
+                        <div class="p-6 text-center bg-gray-900">
+                          <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                        </div>
+                      </div>
+
+                     
+                      <!-- Repeat similar for Agency & Team -->
+                     
                     </div>
-                    <div class="bg-slate-900 p-4 text-center">
-                      <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
-                    </div>
-                    <div class="bg-slate-900 p-4 text-center">
-                      <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
-                    </div>
-              
                   </div>
                 </div>
-               </div>
+
+
+
+               
+              
+         
               </section>
               
           
 
             <section>
-              <div class="flex justify-center">
-                 <img class="rounded-full w-14 h-15 " src="images/testimonial-04.jpg">
+              <div class="relative flex justify-center">
+                 <img class=" rounded-full w-14 h-15 " src="images/testimonial-04.jpg">
+                 <svg class="fill-indigo-500 absolute" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 18h6.196L9.448 0H3.252L0 18Zm10.552 0h6.196L20 0h-6.196l-3.252 18Z"></path>
+              </svg>
               </div>
               <div>
-                <p class="flex justify-center text-slate-500 italic text-xl text-center py-5">"I had to work 8 hours a day on one app. With Cube, I only need one or two hours. I just need to work on creatives, because everything else is automated."</p>
+                <p class="flex justify-center text-slate-500 italic text-xl text-center py-5">"I had to work 8 hours a day on one app. With Cube, I only need one or two hours.
+                   I <br class="hidden lg:block"/> just need to work on creatives, because everything else is <br class="lg:hidden"/> automated."</span> </p>
                 <p class="text-white text-center">Mirta Jiang - <span class="text-indigo-400">Paid Apps</span></p>
               </div>
 
             </section>
-            <section class="mx-9 px-6">
-              <h1 class=" text-white text-6xl font-medium mb-10 pb-7">FAQs</h1>
+            
+            <section class=" lg:mx-9 px-6 py-8">
+              <h1 class=" text-white text-5xl lg:text-5xl font-bold mb-10 ">FAQs</h1>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-1 text-lg">
                 <div>
                   <div>
@@ -482,21 +684,27 @@
                 </div>
               </div>
             </section>
-            <section class="mx-9 px-6">
+            <section class="relative mx-9 px-6 shadow-2xl py-8 mt-8">
               <div>
-                <h2 class="flex justify-center text-center text-5xl text-white py-12">Join the most flexible user-centric platform for teams</h2>
+                <img src="images/cta-illustration.svg" class="absolute hidden md:block">
+              </div>
+              <div>
+                <h2 class="flex justify-center text-center text-5xl text-white py-16 font-['Hanken_Grotesk'] font-semibold">Join the most flexible user-<br/> centric platform for teams</h2>
               </div>
                 
               <div class="font-[Inter] flex justify-center gap-4 lg:gap-10">
                 
-                <a href="/signup.html" class="block text-m  bg-indigo-600 text-white p-4 rounded ">Get
+                <a href="/signup.html" class="block text-m  bg-indigo-600 text-white p-4 rounded cursor-pointer ">Get
                   Started Free <span class="c9ssy czzfn cuwpf cvcf8 cx19h c7oke cgwp2">-&gt;</span></a>
-                  <a href="/signin.html" class="flex block text-m block text-sm  bg-slate-600 text-white p-4 rounded">Read Docs</a>
+                  <a href="/index.html" class="flex block text-m block text-sm  bg-slate-600 text-white p-4 rounded cursor-pointer">Read Docs</a>
             </section>
-            <section class="mx-9 px-6">
-              <div class="grid grid-cols-1 lg:grid-cols-10 gap-4">
 
-                <div class="p-4 flex justify-start lg:col-span-1 lg:col-start-1 text-center">
+
+
+            <section class="mx-9 px-6 py-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-4">
+
+                <div class="p-4 md:col-span-1 lg:col-start-1 text-center">
                   <svg class="w-10 h-10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient x1="0%" y1="32.443%" x2="104.18%" y2="50%" id="hlogo-a">
@@ -517,8 +725,8 @@
                 </svg>
                 </div>
                
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="p-4  lg:col-start-3 lg:col-span-1">
+              
+                <div class="p-4 lg:col-start-3 lg:col-span-1 md:col-span-1">
                   <h6 class="text-white justify-items-start underline m-4">Products</h6>
                   <ul class="text-sm text-slate-700">
                     <li>Cube Manager</li>
@@ -529,7 +737,7 @@
 
                 </div>
            
-                <div class="p-4  lg:col-start-5 lg:col-span-1">
+                <div class="p-4  lg:col-start-5 lg:col-span-1 md:col-span-1">
                   <h6 class="text-white underline m-4">Resources</h6>
                   <ul class="text-sm text-slate-700">
                     <li>Blog</li>
@@ -539,7 +747,7 @@
                   </ul>
                 </div>
 
-                <div class="p-4  lg:col-start-7 lg:col-span-1">
+                <div class="p-4  lg:col-start-7 lg:col-span-1 col-span-1">
                   <h6 class="text-white underline m-4">Project</h6>
                   <ul class="text-sm text-slate-700">
                     <li>Session Recording</li>
@@ -549,7 +757,7 @@
                   </ul>
                 </div>
 
-                <div class="p-4  lg:col-start-9 lg:col-span-1">
+                <div class="p-4 lg:col-start-9 lg:col-span-1 md:col-span-1">
                   <h6 class="text-white underline m-4">Company</h6>
                   <ul class="text-sm text-slate-700">
                     <li>About Us</li>
@@ -591,12 +799,13 @@
                             </svg>
                         </a>
                   
-                 </div>
+               
                 
               </div>
 
             </section>
           </main>
-    
+          <script src="script.js" defer></script>
 </body>
 </html>
+
