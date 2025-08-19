@@ -1,6 +1,4 @@
 
-
-// Select buttons (make sure you use the correct selectors)
 const buttons = document.querySelectorAll(".flex button");
 const btnFreelancers = document.querySelector(".btn-freelancer");
 const btnOrg = document.querySelector(".btn-org");
@@ -19,9 +17,9 @@ function sent(text) {
     togglebtn.addEventListener("click", () => {
       const checkbox = togglebtn.querySelector("input");
       if (checkbox.checked) {
-        starterPrice.textContent = "$35"; // yearly
+        starterPrice.textContent = "$35"; 
       } else {
-        starterPrice.textContent = "$29"; // monthly
+        starterPrice.textContent = "$29"; 
       }
     });
   });
@@ -33,9 +31,9 @@ function sent(text) {
     togglebtn.addEventListener("click", () => {
       const checkbox = togglebtn.querySelector("input");
       if (checkbox.checked) {
-        starterPrice.textContent = "$49"; // yearly
+        starterPrice.textContent = "$49"; 
       } else {
-        starterPrice.textContent = "$55"; // monthly
+        starterPrice.textContent = "$55";
       }
     });
   });
@@ -48,9 +46,9 @@ function sent(text) {
     togglebtn.addEventListener("click", () => {
       const checkbox = togglebtn.querySelector("input");
       if (checkbox.checked) {
-        starterPrice.textContent = "$79"; // yearly
+        starterPrice.textContent = "$79"; 
       } else {
-        starterPrice.textContent = "$85"; // monthly
+        starterPrice.textContent = "$85"; 
       }
     });
   });
@@ -62,9 +60,9 @@ function sent(text) {
     togglebtn.addEventListener("click", () => {
       const checkbox = togglebtn.querySelector("input");
       if (checkbox.checked) {
-        starterPrice.textContent = "$35"; // yearly
+        starterPrice.textContent = "$35"; 
       } else {
-        starterPrice.textContent = "$29"; // monthly
+        starterPrice.textContent = "$29"; 
       }
     });
   });
@@ -76,9 +74,9 @@ function sent(text) {
     togglebtn.addEventListener("click", () => {
       const checkbox = togglebtn.querySelector("input");
       if (checkbox.checked) {
-        starterPrice.textContent = "$35"; // yearly
+        starterPrice.textContent = "$35"; 
       } else {
-        starterPrice.textContent = "$29"; // monthly
+        starterPrice.textContent = "$29"; 
       }
     });
   });
@@ -90,9 +88,9 @@ function sent(text) {
     togglebtn.addEventListener("click", () => {
       const checkbox = togglebtn.querySelector("input");
       if (checkbox.checked) {
-        starterPrice.textContent = "$49"; // yearly
+        starterPrice.textContent = "$49"; 
       } else {
-        starterPrice.textContent = "$55"; // monthly
+        starterPrice.textContent = "$55";
       }
     });
   });
@@ -104,15 +102,41 @@ function sent(text) {
     togglebtn.addEventListener("click", () => {
       const checkbox = togglebtn.querySelector("input");
       if (checkbox.checked) {
-        starterPrice.textContent = "$79"; // yearly
+        starterPrice.textContent = "$79"; 
       } else {
-        starterPrice.textContent = "$85"; // monthly
+        starterPrice.textContent = "$85"; 
       }
     });
   });
 
+  const carousel = document.getElementById("carousel");
+  const nextBtn = document.getElementById("next");
+  const prevBtn = document.getElementById("prev");
 
+  let currentIndex = 0;
+  const totalCards = 4;      
+  const visibleCards = 2;     
+  const totalSlides = Math.ceil(totalCards / visibleCards); 
 
-  
+  function updateCarousel() {
+    const slideWidth = 100; 
+    carousel.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+  }
 
-  
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < totalSlides - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = totalSlides - 1; 
+    }
+    updateCarousel();
+  });

@@ -55,8 +55,8 @@
               </div>
             </div>
             <div class="font-[Inter] flex items-center gap-4 lg:gap-10">
-              <a href="/signin.html" class="flex block text-md text-slate-500 px-2">Sign In</a>
-              <a href="/signup.html" class="block text-md  bg-indigo-500 text-white px-4 py-2 rounded">Get
+              <a href="/signin.html" class="flex block text-md text-slate-500 px-2 cursor-pointer">Sign In</a>
+              <a href="/signup.html" class="block text-md  bg-indigo-500 text-white px-4 py-2 rounded cursor-pointer">Get
                 Started <span class="text-blue-400">-&gt;</span></a>
         
              
@@ -72,14 +72,14 @@
                 <div class="hero-content">
                   <h1 class="title">A powerful suite of</br> user-centric products</h1>
         <!--  <img src="./images/hero-illustration.svg" class="c3zdg" width="1440" height="1265" alt="Hero Illustration">-->      
-                 <p>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                 <p>Our landing page template works on all devices, so you only have to set it up once,<br/> and get beautiful results forever.
 
                  </p>
                 </div>
                 <div  class="hero-buttons">
                 
                   <a href="/signup.html" class="get-started">
-                    Get Started <span class="arrow">→</span>
+                    Get Started Free <span class="arrow">→</span>
                   </a>
                   <a href="/docs.html" class="read-docs">
                     Read Docs
@@ -91,7 +91,7 @@
                 </div>
             </section>
           
-            <section class="py-12 font-[Inter] font-16px">
+            <section class="py-12 font-[Inter] font-16px mb-10">
               <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 mx-8">
               <div class="text-center ">
                <img class="mx-auto w-10 h-10 rounded-full" src="/images/testimonial-01.jpg">
@@ -124,9 +124,12 @@
                    
                 </div>
             </div>
-
-               <p class="text-slate-700 italic mb-3">"The only tool that has the technology to meet our unique and complex needs."</p>
-               <p class="text-sm text-gray-300"> Trustpilot - <span class="text-indigo-600">4.9/5</span></p>
+               
+            <p class="text-slate-500 italic mb-3">"The only tool that has the technology to<br class="hidden lg:block"/> meet our<br class="block lg:hidden"/> unique and complex needs."</p>
+             
+                <p class="text-sm text-gray-300"> Trustpilot - <span class="text-indigo-600">4.9/5</span></p>
+               
+               
               </div>
 
 
@@ -160,8 +163,8 @@
                      
                   </div>
               </div>
-                <p class="text-slate-700 italic mb-3">"The only tool that has the technology to meet our unique and complex needs."</p>
-                <p class="text-sm text-gray-300">Capterra -<span class="text-indigo-600"> 4.7/5</span></p>
+              <p class="text-slate-500 italic mb-3">"The only tool that has the technology to<br class="hidden lg:block"/> meet our<br class="block lg:hidden"/> unique and complex needs."</p>
+              <p class="text-sm text-gray-300">Capterra -<span class="text-indigo-600"> 4.7/5</span></p>
               </div>
               <div class="text-center">
                 <img class="mx-auto w-10 h-10 rounded-full" src="/images/testimonial-03.jpg">
@@ -193,75 +196,84 @@
                      
                   </div>
               </div>
-                 <p class="text-slate-700 italic mb-3">"The only tool that has the technology to meet our unique and complex needs."</p>
-                 <p class="text-sm text-gray-300">G2 - <span class="text-indigo-600">4.9/5</span></p>
+              <p class="text-slate-500 italic mb-3">"The only tool that has the technology to<br class="hidden lg:block"/> meet our<br class="block lg:hidden"/> unique and complex needs."</p>
+              <p class="text-sm text-gray-300">G2 - <span class="text-indigo-600">4.9/5</span></p>
               </div>
             </div>
             </section>
+            <div class="items-center w-[80%] h-[1px] bg-gray-700 mx-auto"></div>
 
-            <section class="px-16">
+<!--Changeeeee-->
+            <section class=" py-16 relative">
+              <img class="absolute top-0 left-12" src="images/features-illustration.svg"/>
+
               <div>
-                <h2 class="text-5xl text-white text-center py-4">Many tools to express your creativity</h2>
-                <p class="text-center text-xl text-slate-700 py-8">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+                <h2 class="text-5xl lg:text-6xl text-white text-center font-[Hanken_Grotesk] font-bold">Many tools to express your<br/> creativity</h2>
+                <p class="text-center text-xl text-slate-700 py-4 ">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br/> deserunt mollit anim id est.</p>
               </div>
 
-              <!--Flex-->
-              <div class="flex gap-6 justify-center">
-              <!--1-->
-                <div class="flex inline-flex flex-col items-start bg-slate-800 rounded-lg">
-                  <img class="px-4 pt-2" src="images/features-icon-01.svg"/>
-                  <div class="p-4">
-                    <p class="text-white text-xl">Collaboration</p>
-                    <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                    
+            
+              <div class="relative w-full max-w-5xl mx-auto overflow-hidden">
+               
+                <div id="carousel" class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%);">
+                  <!-- Card 1 -->
+                  <div class=" flex flex-col items-start bg-slate-800 rounded-lg m-2 px-36">
+                    <img class="px-8 pt-4" src="images/features-icon-01.svg"/>
+                    <div class="p-8">
+                      <p class="text-white text-xl">Collaboration</p>
+                      <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <div class="flex justify-end w-full px-4 pb-4 text-indigo-500">Learn more →</div>
                   </div>
-                  </p>
-                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
+
+                  
+              
+                  <!-- Card 2 -->
+                  <div class="flex flex-col items-start bg-slate-800 rounded-lg m-2 px-36">
+                    <img class="px-8 pt-4" src="images/features-icon-02.svg"/>
+                    <div class="p-8">
+                      <p class="text-white text-xl">Experience</p>
+                      <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <div class="flex justify-end w-full px-4 pb-4 text-indigo-500">Learn more →</div>
+                  </div>
+              
+                  <!-- Card 3 -->
+                  <div class=" flex flex-col items-start bg-slate-800 rounded-lg m-2  px-36">
+                    <img class="px-8 pt-4" src="images/features-icon-03.svg"/>
+                    <div class="p-8">
+                      <p class="text-white text-xl">Animation</p>
+                      <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <div class="flex justify-end w-full px-4 pb-4 text-indigo-500">Learn more →</div>
+                  </div>
+              
+                  <!-- Card 4 -->
+                  <div class="flex flex-col items-start bg-slate-800 rounded-lg m-2  px-36">
+                    <img class="px-8 pt-4" src="images/features-icon-04.svg"/>
+                    <div class="p-8">
+                      <p class="text-white text-xl">Modeling</p>
+                      <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <div class="flex justify-end w-full px-4 pb-4 text-indigo-500">Learn more →</div>
+                  </div>
                 </div>
-
-                 <!--1-->
-
-                <div class="flex inline-flex flex-col items-start bg-slate-800 rounded-lg ">
-                  <img class="px-4 pt-2" src="images/features-icon-02.svg"/>
-                  <div class="p-4">
-                    <p class="text-white text-xl">Experience</p>
-                    <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                    
-                  </div>
-                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
-                 </div>
-                  <!--1-->
-
-
-                <div class="flex inline-flex flex-col items-start  bg-slate-800 rounded-lg">
-                  <img class="px-4 pt-2" src="images/features-icon-03.svg"/>
-                  <div class="p-4">
-                    <p class="text-white text-xl">Animation</p>
-                    <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-
-                  </div>
-                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
-                  </div>
-                   <!--1-->
-                 <div class="flex inline-flex flex-col items-start  bg-slate-800 rounded-lg">
-                  <img class="px-4 pt-2" src="images/features-icon-04.svg"/>
-                  <div class="p-4">
-                    <p class="text-white text-xl">Modeling</p>
-                    <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-
-                  </div>
-                  <div class="flex justify-end w-full px-8 pb-4 cursor-pointer text-indigo-500">Learn more <span class="text-indigo-500">-&gt;</span></div>
+              
+               
+                <div class="flex justify-end gap-4 mt-4">
+                  <button id="prev" class="bg-slate-700 text-white px-4 py-2 rounded-full">←</button>
+                  <button id="next" class="bg-slate-700 text-white px-4 py-2 rounded-full">→</button>
                 </div>
               </div>
             </section>
 
-
+            
 
             <section class="relative bg-gray-900 shadow-3xl my-32">
               <div class="c1wya cjftm cta51 c39rz cxdjo ck8c1 cpjqk cj3ve c7c5q" aria-hidden="true">
                 <img src="./images/features-illustration-02.svg" class="absolute top-0 left-0 w-full h-full object-cover opacity-35" width="1440" height="453" alt="Features 02 Illustration">
             </div>
-              <h2 class="flex flex-col justify-center font-[HK_Grotesk] font-semibold text-5xl lg:text-6xl text-white text-center py-12">Features to help you create<br/>your best designs</h2>
+              <h2 class="flex flex-col justify-center font-[HK_Grotesk] font-semibold text-5xl lg:text-6xl text-white text-center py-12 font-[Hanken_Grotesk]">Features to help you create<br/>your best designs</h2>
               <div class="flex flex-col  justify-center  mx-auto max-w-6xl ">
                   <div class="flex flex-col lg:flex-row items-start gap-8 shadow-2xl">
                     <div class="flex-1 p-4">
@@ -289,12 +301,15 @@
 
             </section>
 
+            <div class="items-center w-[80%] h-[1px] bg-gray-700 mx-auto"></div>
 
 
 
-            <section>
+
+
+            <section class="relative mt-8">
               <div>
-                <h2 class="text-5xl text-white text-center py-8">An ecosystem of integration</h2>
+                <h2 class="text-5xl lg:text-6xl text-white text-center py-4 font-[HK_Grotesk] font-bold ">An ecosystem of<br class="hidden lg:block"/> integrations</h2>
               </div>
               <div class="relative flex items-center justify-center m-48">
 
@@ -373,43 +388,56 @@
               
 
                
-                
+              <div class="hidden lg:block absolute top-[550px] left-1/2 w-[2px] h-10 bg-gray-700"></div>
+              <div class="hidden lg:block absolute top-[590px] left-[15%] w-[70%] h-[1px] bg-gray-700"></div>
+              <!-- Vertical connector lines -->
+              <div class="hidden lg:block absolute top-[590px] left-[15%] w-[1px] h-12 bg-gray-700"></div>
+              <div class="hidden lg:block absolute top-[590px] left-[30%] w-[1px] h-12 bg-gray-700"></div>
+              <div class="hidden lg:block absolute top-[590px] left-[44%] w-[1px] h-12 bg-gray-700"></div>
+              <div class="hidden lg:block absolute top-[590px] left-[56%] w-[1px] h-12 bg-gray-700"></div>
+              <div class="hidden lg:block absolute top-[590px] left-[70%] w-[1px] h-12 bg-gray-700"></div>
+              <div class="hidden lg:block absolute top-[590px] left-[85%] w-[1px] h-12 bg-gray-700"></div>
+              
+              <div class="hidden lg:block absolute top-[880px] left-[50%] w-[1px] h-10 bg-gray-700"></div>
+
              
-                <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 sm:grid-cols-3 mt-32 m-4 p-32">
-                  <div class="hidden lg:block absolute top-full left-1/2 w-[2px] h-12 bg-gray-300"></div>
-                  <div class="flex justify-center items-center bg-slate-800 p-8 ">
-                    <div class="rounded-full p-4 bg-slate-900">
-                      <img src="/images/integration-icon-01.svg">
+                <div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-4 sm:grid-cols-3 m-4 p-24">
+                
+
+
+                  <div class="flex justify-center items-center bg-slate-800 p-8">
+                    <div class="rounded-full bg-slate-900 w-20 h-20 flex items-center justify-center">
+                      <img src="/images/integration-icon-01.svg" class="w-12 h-12">
                     </div>
                   </div>
                   
                   <div class="flex justify-center items-center bg-slate-800 p-8">
-                    <div class="rounded-full p-4 bg-slate-900">
-                      <img src="/images/integration-icon-02.svg">
+                    <div class="rounded-full bg-slate-900 w-20 h-20 flex items-center justify-center">
+                      <img src="/images/integration-icon-02.svg" class="w-12 h-12">
                     </div>
                   </div>
 
                   <div class="flex justify-center items-center bg-slate-800 p-8">
-                    <div class="rounded-full p-4 bg-slate-900">
-                      <img src="/images/integration-icon-03.svg">
+                    <div class="flex items-center  rounded-full bg-slate-900 w-20 h-20  justify-center">
+                      <img src="/images/integration-icon-03.svg" class="w-12 h-12">
                     </div>
                   </div>
 
                   <div class="flex justify-center items-center bg-slate-800 p-8">
-                    <div class="rounded-full p-4 bg-slate-900">
-                      <img src="/images/integration-icon-04.svg">
+                    <div class="rounded-full bg-slate-900 w-20 h-20 flex items-center justify-center">
+                      <img src="/images/integration-icon-04.svg" class="w-12 h-12">
                     </div>
                   </div>
 
                   <div class="flex justify-center items-center bg-slate-800 p-8">
-                    <div class="rounded-full p-4 bg-slate-900">
-                      <img src="/images/integration-icon-05.svg">
+                    <div class="rounded-full bg-slate-900 w-20 h-20 flex items-center justify-center">
+                      <img src="/images/integration-icon-05.svg" class="w-12 h-12">
                     </div>
                   </div>
 
-                  <div class="flex justify-center items-center bg-slate-800">
-                    <div class="rounded-full p-4 bg-slate-900">
-                      <img src="/images/integration-icon-06.svg">
+                  <div class="flex justify-center items-center bg-slate-800 p-8">
+                    <div class="rounded-full bg-slate-900 w-20 h-20 flex items-center justify-center">
+                      <img src="/images/integration-icon-06.svg" class="w-12 h-12">
                     </div>
                   </div>
                 </div>
@@ -422,17 +450,17 @@
               
               <section>
                 <div>
-                  <h2 class="text-white text-5xl text-center mt-96 py-4">
-                    Let's find the right plan for your business
+                  <h2 class="text-white text-5xl lg:text-6xl text-center font-bold mt-8 py-8 font-[HK_Grotesk]">
+                    Let's find the right plan for<br class="hidden lg:block"/> you<br class="block lg:hidden"/> business
                   </h2>
                   <p class="text-slate-400 text-center text-xl">
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br class="hidden lg:block"/> mollit anim id est.
                   </p>
                 </div>
 
                 <div class="bg-slate-900 text-white py-12">
                   <div class="max-w-6xl mx-auto px-4">
-                    <!-- Toggle -->
+                  
                     
                     <!-- Desktop Table -->
                     <div class="hidden md:block overflow-x-auto">
@@ -488,7 +516,9 @@
                             <td class="p-4 text-center border-r border-slate-700"></td>
                             <td class="p-4 text-center border-r border-slate-700"></td>
                             <td class="p-4 text-center "></td>
+                            
                           </tr>
+                          
                           <tr class="bg-slate-800">
                             <td class="p-4 border-r border-slate-700">Unlimited Activities</td>
                             <td class="p-4 text-center border-r border-slate-700">✔</td>
@@ -502,22 +532,25 @@
                             <td class="p-4 text-center border-r border-slate-700">✔</td>
                             <td class="p-4 text-center ">✔</td>
                           </tr>
-                          <tr class="bg-slate-800">
+                          <tr class="relative bg-slate-800">
                             <td class="p-4 border-r border-slate-700">Adjust Group Sizes</td>
                             <td class="p-4 text-center border-r border-slate-700">—</td>
                             <td class="p-4 text-center border-r border-slate-700">—</td>
                             <td class="p-4 text-center ">✔</td>
                           </tr>
+                          <div>
+                            <img class="absolute top-20 left-1/2 -translate-x-1/2 absolute" src="images/pricing-illustration.svg"/>
+                          </div>
                           <tr>
                             <td class="p-4 border-r border-slate-700"></td>
                             <td class="p-4 text-center border-r border-slate-700">
-                              <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                              <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">Free Trial →</a>
                             </td>
                             <td class="p-4 text-center border-r border-slate-700">
-                              <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                              <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">Free Trial →</a>
                             </td>
                             <td class="p-4 text-center ">
-                              <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                              <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">Free Trial →</a>
                             </td>
                           </tr>
                         </tbody>
@@ -568,8 +601,11 @@
                             <li class="flex justify-between p-4"><span>Adjust Group Sizes</span><span>—</span></li>
                           </ul>
                         </div>
-                        <div class="p-6 text-center bg-gray-900">
-                          <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                        <div class="p-6 bg-gray-900">
+                          <a href="#"
+                            class="block w-full bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-3 rounded-lg text-center font-medium">
+                            Free Trial →
+                          </a>
                         </div>
                       </div>
 
@@ -590,8 +626,11 @@
                             <li class="flex justify-between p-4"><span>Adjust Group Sizes</span><span>—</span></li>
                           </ul>
                         </div>
-                        <div class="p-6 text-center bg-gray-900">
-                          <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                        <div class="p-6 bg-gray-900">
+                          <a href="#"
+                            class="block w-full bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-3 rounded-lg text-center font-medium">
+                            Free Trial →
+                          </a>
                         </div>
                       </div>
 
@@ -613,13 +652,16 @@
                             <li class="flex justify-between p-4"><span>Adjust Group Sizes</span><span>—</span></li>
                           </ul>
                         </div>
-                        <div class="p-6 text-center bg-gray-900">
-                          <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">Free Trial →</a>
+                        <div class="p-6 bg-gray-900">
+                          <a href="#"
+                            class="block w-full bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-3 rounded-lg text-center font-medium">
+                            Free Trial →
+                          </a>
                         </div>
                       </div>
 
                      
-                      <!-- Repeat similar for Agency & Team -->
+                    
                      
                     </div>
                   </div>
@@ -635,12 +677,15 @@
           
 
             <section>
-              <div class="relative flex justify-center">
-                 <img class=" rounded-full w-14 h-15 " src="images/testimonial-04.jpg">
-                 <svg class="fill-indigo-500 absolute" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 18h6.196L9.448 0H3.252L0 18Zm10.552 0h6.196L20 0h-6.196l-3.252 18Z"></path>
-              </svg>
+              <div class="flex justify-center">
+                <div class="relative inline-block">
+                  <img class=" rounded-full w-14 h-15 " src="images/testimonial-04.jpg">
+                  <svg class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 fill-indigo-500 " width="20" height="18" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M0 18h6.196L9.448 0H3.252L0 18Zm10.552 0h6.196L20 0h-6.196l-3.252 18Z"></path>
+               </svg>
+               </div>
               </div>
+              
               <div>
                 <p class="flex justify-center text-slate-500 italic text-xl text-center py-5">"I had to work 8 hours a day on one app. With Cube, I only need one or two hours.
                    I <br class="hidden lg:block"/> just need to work on creatives, because everything else is <br class="lg:hidden"/> automated."</span> </p>
@@ -648,7 +693,7 @@
               </div>
 
             </section>
-            
+
             <section class=" lg:mx-9 px-6 py-8">
               <h1 class=" text-white text-5xl lg:text-5xl font-bold mb-10 ">FAQs</h1>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-1 text-lg">
@@ -684,20 +729,32 @@
                 </div>
               </div>
             </section>
-            <section class="relative mx-9 px-6 shadow-2xl py-8 mt-8">
+
+
+            <section class="relative shadow-2xl py-8 mt-8">
               <div>
                 <img src="images/cta-illustration.svg" class="absolute hidden md:block">
               </div>
               <div>
-                <h2 class="flex justify-center text-center text-5xl text-white py-16 font-['Hanken_Grotesk'] font-semibold">Join the most flexible user-<br/> centric platform for teams</h2>
+                <h2 class="flex justify-center text-center text-5xl text-white py-16 font-['Hanken_Grotesk'] font-semibold">Join the most flexible<br class="block lg:hidden"/> user-<br class="hidden lg:block"/> centric platform for teams</h2>
               </div>
                 
               <div class="font-[Inter] flex justify-center gap-4 lg:gap-10">
                 
-                <a href="/signup.html" class="block text-m  bg-indigo-600 text-white p-4 rounded cursor-pointer ">Get
-                  Started Free <span class="c9ssy czzfn cuwpf cvcf8 cx19h c7oke cgwp2">-&gt;</span></a>
-                  <a href="/index.html" class="flex block text-m block text-sm  bg-slate-600 text-white p-4 rounded cursor-pointer">Read Docs</a>
-            </section>
+
+                <div class="flex flex-col justify-center gap-4 lg:flex-row lg:justify-center ">
+                  <a href="/signup.html" class="text-m bg-indigo-500 text-white px-24 py-4 rounded cursor-pointer ">Get
+                    Started Free <span class="text-blue-400">-&gt;</span></a>
+                  <a href="/index.html" class="text-m text-sm  bg-slate-600 text-white p-4 rounded flex justify-center items-center cursor-pointer">Read Docs</a>
+             
+             
+                </div>
+                  
+           
+                </section>
+
+                <div class="items-center w-[80%] h-[1px] bg-gray-700 mx-auto"></div>
+
 
 
 
